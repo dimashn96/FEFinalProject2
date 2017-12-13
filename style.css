@@ -1,0 +1,172 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: black;
+    font-family: 'Archivo Black', sans-serif;
+    transition: 5s;
+}
+
+#main #logo {
+    margin: 2.5vw auto;
+    background-image: url(images/logo.png);
+    background-size: 100% 100%;
+    animation: appearance 5s;
+    width: 62.5vw;
+    height: 19.7vw;
+}
+
+#main #menu {
+    padding: 0;
+    font-size: 3vw;
+    color: whitesmoke;
+    list-style-type: none;
+    width: 27.5vw;
+    margin: 4vw auto;
+    user-select: none;
+    animation: appearance 5s;
+}
+
+#main #menu .elem {
+    margin: 1.3vw 0.7vw;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+#main #menu .elem:hover::before {
+    content: '';
+    background-image: url(images/panzerMenu.png);
+    background-size: cover;
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    left: -4.5vw;
+}
+
+#main #controls {
+    margin: 1.2vw 0;
+    float: left;
+    width: 5vw;
+    height: 45vw;
+}
+
+#main #info {
+    text-align: center;
+    margin: 1.2vw 0 1.2vw 95vw;
+    width: 5vw;
+    height: 45vw;
+    font-size: 1.3vw;
+    position: relative;
+}
+
+#main #info #scores {
+    position: absolute;
+    top: 20vw;
+}
+
+#main #info img {
+    display: block;
+    width: 3vw;
+}
+
+#main #info .score {
+
+}
+
+#main #game {
+    margin: 1.2vw 0;
+    float: left;
+    background-color: black;
+    width: 90vw;
+    height: 45vw;
+    position: relative;
+}
+
+#main #game .panzer {
+    width: 5vw;
+    height: 5vw;
+    background-size: cover;
+    position: absolute;
+    /*animation: appearance 5s;*/
+    /*animation: twinkle 0.5s 10;*/
+    transition: none;
+    /*border: solid 1px red;*/
+}
+
+#main .bullet {
+    width: 1vw;
+    height: 1vw;
+    background: url('images/skinBullet.png');
+    background-size: cover;
+    position: absolute;
+    animation: appearance 0.5s;
+    /*border: solid 1px red;*/
+}
+
+.twinkle {
+    animation: twinkle 0.5s 10;
+}
+
+@keyframes appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

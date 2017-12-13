@@ -1,0 +1,52 @@
+{
+  "name":"mainMenu",
+  "items": [
+    {
+      "id":"1player",
+      "name":"1 PLAYER",
+      "items":""
+    },
+    {
+      "id":"2players",
+      "name":"2 PLAYERS",
+      "items": [
+        {
+          "id":"newsession",
+          "name":"NEW SESSION",
+          "items": [
+            {
+              "id":"1contra1",
+              "name":"1 CONTRA 1",
+              "items":""
+            },
+            {
+              "id":"2contraall",
+              "name":"2 CONTRA ALL",
+              "items":""
+            },
+            {
+              "id":"back",
+              "name":"BACK",
+              "items":""
+            }
+          ]
+        },
+        {
+          "id":"findsession",
+          "name":"FIND SESSION",
+          "items":""
+        },
+        {
+          "id":"back",
+          "name":"BACK",
+          "items":""
+        }
+      ]
+    },
+    {
+      "id":"highscores",
+      "name":"HIGHSCORES",
+      "items":""
+    }
+  ]
+}
